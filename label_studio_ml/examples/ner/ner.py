@@ -348,6 +348,7 @@ class TransformersBasedTagger(LabelStudioMLBase):
             self.load(self.train_output)
 
     def load(self, train_output):
+        print("*******IN LOAD******")
         pretrained_model = train_output['model_path']
         self._model_type = train_output['model_type']
         _, model_class, tokenizer_class = MODEL_CLASSES[train_output['model_type']]
@@ -365,6 +366,7 @@ class TransformersBasedTagger(LabelStudioMLBase):
             self._model_type, self._tokenizer, self._pad_token_label_id)
 
     def predict(self, tasks, **kwargs):
+        print("IN PREDICT: ", tasks)
         if not hasattr(self, "_tokenizer"):
             logger.error("No model loaded! Please train model before getting predictions!")
             return {}
@@ -426,7 +428,7 @@ class TransformersBasedTagger(LabelStudioMLBase):
                             'value': {
                                 'labels': [label],
                                 'start': group_start,
-                                'end': None, 
+                                'end': None,
                                 'text': '...'
                             }
                         })
@@ -460,7 +462,7 @@ class TransformersBasedTagger(LabelStudioMLBase):
 
     def fit(
         self, completions, workdir=None, model_type='bert', pretrained_model='bert-base-uncased',
-        batch_size=32, learning_rate=5e-5, adam_epsilon=1e-8, num_train_epochs=100, weight_decay=0.0, logging_steps=1,
+        batch_size=32, learning_rate=5e-5, adam_epsilon=1e-8, num_train_epochs=5, weight_decay=0.0, logging_steps=1,
         warmup_steps=0, save_steps=50, dump_dataset=True, cache_dir='~/.heartex/cache', train_logs=None,
         **kwargs
     ):

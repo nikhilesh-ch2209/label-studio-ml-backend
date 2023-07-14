@@ -1,0 +1,395 @@
+{
+  "event": "ANNOTATION_CREATED",
+  "job_id": "1677159886",
+  "data": {
+    "annotation": {
+      "id": 25604,
+      "result": [
+        {
+          "value": {
+            "choices": [
+              "PAYROLL_NATIONAL_SALARY"
+            ]
+          },
+          "id": "5DLdNhtPcG",
+          "from_name": "sentiment",
+          "to_name": "text",
+          "type": "choices",
+          "origin": "manual"
+        }
+      ],
+      "was_cancelled": false,
+      "ground_truth": false,
+      "created_at": "2023-02-23T13:44:46.436198Z",
+      "updated_at": "2023-02-23T13:44:46.436238Z",
+      "lead_time": 2.327,
+      "prediction": {},
+      "result_count": 0,
+      "task": 58762,
+      "project": 28,
+      "completed_by": 1,
+      "parent_prediction": null,
+      "parent_annotation": null
+    },
+    "project": {
+      "id": 28,
+      "task_number": 24254,
+      "finished_task_number": 7,
+      "total_predictions_number": 0,
+      "total_annotations_number": 7,
+      "num_tasks_with_annotations": 7,
+      "useful_annotation_number": 7,
+      "ground_truth_number": 0,
+      "skipped_annotations_number": 0,
+      "title": "Financial formatted data",
+      "description": "",
+      "label_config": "<View>\n  <Text name=\"text\" value=\"$processed_voucher_details\"/>\n  <View style=\"box-shadow: 2px 2px 5px #999;                padding: 20px; margin-top: 2em;                border-radius: 5px;\">\n    <Header value=\"Choose text sentiment\"/>\n    <Choices name=\"sentiment\" toName=\"text\" choice=\"single\" showInLine=\"true\">\n      \n      \n      \n    <Choice value=\"MISCELLANEOUS\"/><Choice value=\"PAYROLL_EXPAT_TRAVEL &amp; OTHER ALLOWANCES\"/><Choice value=\"BANK CHARGES_OTHERS\"/><Choice value=\"INVESTMENT RETURNS\"/><Choice value=\"UNIT BUDGET\"/><Choice value=\"OPERATIONAL EXPENSES\"/><Choice value=\"SALES_EXPORT\"/><Choice value=\"WITHDRAWAL &amp; TRANSFERS_FX\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_CORPORATE TAX\"/><Choice value=\"FX BIDS\"/><Choice value=\"DEPOSITS &amp; TRANSFER_INTERNAL TRANSFER\"/><Choice value=\"SALES_LOCAL\"/><Choice value=\"WITHDRAWAL &amp; TRANSFERS_INTERNAL TRANSFER\"/><Choice value=\"PAYROLL_NATIONAL_OVERTIME\"/><Choice value=\"PAYROLL_NATIONAL_OTHERS\"/><Choice value=\"REFUNDS_VENDOR REFUNDS\"/><Choice value=\"FINANCING_DEBT FINANCING_TERM LOAN\"/><Choice value=\"DEBT PAYMENTS_TERM LOAN\"/><Choice value=\"BANK INTEREST\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_VAT\"/><Choice value=\"REFUNDS_LOGISTICS REFUNDS\"/><Choice value=\"OPERATIONAL EXPENSES_RAW MATERIALS\"/><Choice value=\"OPERATIONAL EXPENSES_CONSUMABLES &amp; SPARES\"/><Choice value=\"OPERATIONAL EXPENSES_FUEL&amp;LUBRICANT\"/><Choice value=\"DEBT PAYMENTS_OVERDRAFT FACILITY\"/><Choice value=\"OPERATIONAL EXPENSES_LOGISTICS\"/><Choice value=\"OPERATIONAL EXPENSES_LOGISTICS_OTHERS\"/><Choice value=\"INVESTMENTS_OTHERS\"/><Choice value=\"OPERATIONAL EXPENSES_INSURANCE PREMIUM\"/><Choice value=\"BANK CHARGES_LC FACILITY\"/><Choice value=\"PAYROLL_NATIONAL_SALARY\"/><Choice value=\"STATUTORY PAYMENTS_EMPLOYEE BENEFITS_PENSION FUND\"/><Choice value=\"REFUNDS_BANK REFUNDS\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_IMPORT DUTY\"/><Choice value=\"OPERATIONAL EXPENSES_TRAVEL EXPENSES_HOTEL&amp;RESTAURENTS\"/><Choice value=\"OPERATIONAL EXPENSES_TRAVEL EXPENSES\"/><Choice value=\"OPERATIONAL EXPENSES_UTILITY_ADMIN EXPENSES\"/><Choice value=\"PAYROLL_NATIONAL_MEDICAL EXPENSES\"/><Choice value=\"WITHDRAWAL &amp; TRANSFERS\"/><Choice value=\"PAYROLL_EXPAT_VISA&amp;OTHERS\"/><Choice value=\"PAYROLL_NATIONAL_LEAVE ALLOWANCES\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_PAYEE TAX\"/><Choice value=\"NDF REFUND\"/><Choice value=\"PAYROLL_NATIONAL_BONUS&amp;INCENTIVES\"/><Choice value=\"OPERATIONAL EXPENSES_UTILITY_MAINTENANCE\"/><Choice value=\"INVESTMENTS_CAPITAL ASSET_BUILDING\"/><Choice value=\"OPERATIONAL EXPENSES_LOGISTICS INSURANCE &amp; OTHERS\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_EXPORT DUTY\"/><Choice value=\"CLAIMS_INSURANCE\"/><Choice value=\"INVESTMENT RETURNS_LOANS\"/><Choice value=\"OPERATIONAL EXPENSES_CUSTOMER REVERSAL\"/><Choice value=\"PAYROLL_EXPAT_SALARY\"/><Choice value=\"STATUTORY PAYMENTS_TAXES_OTHERS\"/></Choices>\n  </View>\n</View><!-- {\n  \"data\": {\"text\": \"This is a great 3D movie that delivers everything almost right in your face.\"}\n} -->",
+      "parsed_label_config": {
+        "sentiment": {
+          "type": "Choices",
+          "to_name": [
+            "text"
+          ],
+          "inputs": [
+            {
+              "type": "Text",
+              "value": "processed_voucher_details"
+            }
+          ],
+          "labels": [
+            "MISCELLANEOUS",
+            "PAYROLL_EXPAT_TRAVEL & OTHER ALLOWANCES",
+            "BANK CHARGES_OTHERS",
+            "INVESTMENT RETURNS",
+            "UNIT BUDGET",
+            "OPERATIONAL EXPENSES",
+            "SALES_EXPORT",
+            "WITHDRAWAL & TRANSFERS_FX",
+            "STATUTORY PAYMENTS_TAXES_CORPORATE TAX",
+            "FX BIDS",
+            "DEPOSITS & TRANSFER_INTERNAL TRANSFER",
+            "SALES_LOCAL",
+            "WITHDRAWAL & TRANSFERS_INTERNAL TRANSFER",
+            "PAYROLL_NATIONAL_OVERTIME",
+            "PAYROLL_NATIONAL_OTHERS",
+            "REFUNDS_VENDOR REFUNDS",
+            "FINANCING_DEBT FINANCING_TERM LOAN",
+            "DEBT PAYMENTS_TERM LOAN",
+            "BANK INTEREST",
+            "STATUTORY PAYMENTS_TAXES_VAT",
+            "REFUNDS_LOGISTICS REFUNDS",
+            "OPERATIONAL EXPENSES_RAW MATERIALS",
+            "OPERATIONAL EXPENSES_CONSUMABLES & SPARES",
+            "OPERATIONAL EXPENSES_FUEL&LUBRICANT",
+            "DEBT PAYMENTS_OVERDRAFT FACILITY",
+            "OPERATIONAL EXPENSES_LOGISTICS",
+            "OPERATIONAL EXPENSES_LOGISTICS_OTHERS",
+            "INVESTMENTS_OTHERS",
+            "OPERATIONAL EXPENSES_INSURANCE PREMIUM",
+            "BANK CHARGES_LC FACILITY",
+            "PAYROLL_NATIONAL_SALARY",
+            "STATUTORY PAYMENTS_EMPLOYEE BENEFITS_PENSION FUND",
+            "REFUNDS_BANK REFUNDS",
+            "STATUTORY PAYMENTS_TAXES_IMPORT DUTY",
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES_HOTEL&RESTAURENTS",
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES",
+            "OPERATIONAL EXPENSES_UTILITY_ADMIN EXPENSES",
+            "PAYROLL_NATIONAL_MEDICAL EXPENSES",
+            "WITHDRAWAL & TRANSFERS",
+            "PAYROLL_EXPAT_VISA&OTHERS",
+            "PAYROLL_NATIONAL_LEAVE ALLOWANCES",
+            "STATUTORY PAYMENTS_TAXES_PAYEE TAX",
+            "NDF REFUND",
+            "PAYROLL_NATIONAL_BONUS&INCENTIVES",
+            "OPERATIONAL EXPENSES_UTILITY_MAINTENANCE",
+            "INVESTMENTS_CAPITAL ASSET_BUILDING",
+            "OPERATIONAL EXPENSES_LOGISTICS INSURANCE & OTHERS",
+            "STATUTORY PAYMENTS_TAXES_EXPORT DUTY",
+            "CLAIMS_INSURANCE",
+            "INVESTMENT RETURNS_LOANS",
+            "OPERATIONAL EXPENSES_CUSTOMER REVERSAL",
+            "PAYROLL_EXPAT_SALARY",
+            "STATUTORY PAYMENTS_TAXES_OTHERS"
+          ],
+          "labels_attrs": {
+            "MISCELLANEOUS": {
+              "value": "MISCELLANEOUS"
+            },
+            "PAYROLL_EXPAT_TRAVEL & OTHER ALLOWANCES": {
+              "value": "PAYROLL_EXPAT_TRAVEL & OTHER ALLOWANCES"
+            },
+            "BANK CHARGES_OTHERS": {
+              "value": "BANK CHARGES_OTHERS"
+            },
+            "INVESTMENT RETURNS": {
+              "value": "INVESTMENT RETURNS"
+            },
+            "UNIT BUDGET": {
+              "value": "UNIT BUDGET"
+            },
+            "OPERATIONAL EXPENSES": {
+              "value": "OPERATIONAL EXPENSES"
+            },
+            "SALES_EXPORT": {
+              "value": "SALES_EXPORT"
+            },
+            "WITHDRAWAL & TRANSFERS_FX": {
+              "value": "WITHDRAWAL & TRANSFERS_FX"
+            },
+            "STATUTORY PAYMENTS_TAXES_CORPORATE TAX": {
+              "value": "STATUTORY PAYMENTS_TAXES_CORPORATE TAX"
+            },
+            "FX BIDS": {
+              "value": "FX BIDS"
+            },
+            "DEPOSITS & TRANSFER_INTERNAL TRANSFER": {
+              "value": "DEPOSITS & TRANSFER_INTERNAL TRANSFER"
+            },
+            "SALES_LOCAL": {
+              "value": "SALES_LOCAL"
+            },
+            "WITHDRAWAL & TRANSFERS_INTERNAL TRANSFER": {
+              "value": "WITHDRAWAL & TRANSFERS_INTERNAL TRANSFER"
+            },
+            "PAYROLL_NATIONAL_OVERTIME": {
+              "value": "PAYROLL_NATIONAL_OVERTIME"
+            },
+            "PAYROLL_NATIONAL_OTHERS": {
+              "value": "PAYROLL_NATIONAL_OTHERS"
+            },
+            "REFUNDS_VENDOR REFUNDS": {
+              "value": "REFUNDS_VENDOR REFUNDS"
+            },
+            "FINANCING_DEBT FINANCING_TERM LOAN": {
+              "value": "FINANCING_DEBT FINANCING_TERM LOAN"
+            },
+            "DEBT PAYMENTS_TERM LOAN": {
+              "value": "DEBT PAYMENTS_TERM LOAN"
+            },
+            "BANK INTEREST": {
+              "value": "BANK INTEREST"
+            },
+            "STATUTORY PAYMENTS_TAXES_VAT": {
+              "value": "STATUTORY PAYMENTS_TAXES_VAT"
+            },
+            "REFUNDS_LOGISTICS REFUNDS": {
+              "value": "REFUNDS_LOGISTICS REFUNDS"
+            },
+            "OPERATIONAL EXPENSES_RAW MATERIALS": {
+              "value": "OPERATIONAL EXPENSES_RAW MATERIALS"
+            },
+            "OPERATIONAL EXPENSES_CONSUMABLES & SPARES": {
+              "value": "OPERATIONAL EXPENSES_CONSUMABLES & SPARES"
+            },
+            "OPERATIONAL EXPENSES_FUEL&LUBRICANT": {
+              "value": "OPERATIONAL EXPENSES_FUEL&LUBRICANT"
+            },
+            "DEBT PAYMENTS_OVERDRAFT FACILITY": {
+              "value": "DEBT PAYMENTS_OVERDRAFT FACILITY"
+            },
+            "OPERATIONAL EXPENSES_LOGISTICS": {
+              "value": "OPERATIONAL EXPENSES_LOGISTICS"
+            },
+            "OPERATIONAL EXPENSES_LOGISTICS_OTHERS": {
+              "value": "OPERATIONAL EXPENSES_LOGISTICS_OTHERS"
+            },
+            "INVESTMENTS_OTHERS": {
+              "value": "INVESTMENTS_OTHERS"
+            },
+            "OPERATIONAL EXPENSES_INSURANCE PREMIUM": {
+              "value": "OPERATIONAL EXPENSES_INSURANCE PREMIUM"
+            },
+            "BANK CHARGES_LC FACILITY": {
+              "value": "BANK CHARGES_LC FACILITY"
+            },
+            "PAYROLL_NATIONAL_SALARY": {
+              "value": "PAYROLL_NATIONAL_SALARY"
+            },
+            "STATUTORY PAYMENTS_EMPLOYEE BENEFITS_PENSION FUND": {
+              "value": "STATUTORY PAYMENTS_EMPLOYEE BENEFITS_PENSION FUND"
+            },
+            "REFUNDS_BANK REFUNDS": {
+              "value": "REFUNDS_BANK REFUNDS"
+            },
+            "STATUTORY PAYMENTS_TAXES_IMPORT DUTY": {
+              "value": "STATUTORY PAYMENTS_TAXES_IMPORT DUTY"
+            },
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES_HOTEL&RESTAURENTS": {
+              "value": "OPERATIONAL EXPENSES_TRAVEL EXPENSES_HOTEL&RESTAURENTS"
+            },
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES": {
+              "value": "OPERATIONAL EXPENSES_TRAVEL EXPENSES"
+            },
+            "OPERATIONAL EXPENSES_UTILITY_ADMIN EXPENSES": {
+              "value": "OPERATIONAL EXPENSES_UTILITY_ADMIN EXPENSES"
+            },
+            "PAYROLL_NATIONAL_MEDICAL EXPENSES": {
+              "value": "PAYROLL_NATIONAL_MEDICAL EXPENSES"
+            },
+            "WITHDRAWAL & TRANSFERS": {
+              "value": "WITHDRAWAL & TRANSFERS"
+            },
+            "PAYROLL_EXPAT_VISA&OTHERS": {
+              "value": "PAYROLL_EXPAT_VISA&OTHERS"
+            },
+            "PAYROLL_NATIONAL_LEAVE ALLOWANCES": {
+              "value": "PAYROLL_NATIONAL_LEAVE ALLOWANCES"
+            },
+            "STATUTORY PAYMENTS_TAXES_PAYEE TAX": {
+              "value": "STATUTORY PAYMENTS_TAXES_PAYEE TAX"
+            },
+            "NDF REFUND": {
+              "value": "NDF REFUND"
+            },
+            "PAYROLL_NATIONAL_BONUS&INCENTIVES": {
+              "value": "PAYROLL_NATIONAL_BONUS&INCENTIVES"
+            },
+            "OPERATIONAL EXPENSES_UTILITY_MAINTENANCE": {
+              "value": "OPERATIONAL EXPENSES_UTILITY_MAINTENANCE"
+            },
+            "INVESTMENTS_CAPITAL ASSET_BUILDING": {
+              "value": "INVESTMENTS_CAPITAL ASSET_BUILDING"
+            },
+            "OPERATIONAL EXPENSES_LOGISTICS INSURANCE & OTHERS": {
+              "value": "OPERATIONAL EXPENSES_LOGISTICS INSURANCE & OTHERS"
+            },
+            "STATUTORY PAYMENTS_TAXES_EXPORT DUTY": {
+              "value": "STATUTORY PAYMENTS_TAXES_EXPORT DUTY"
+            },
+            "CLAIMS_INSURANCE": {
+              "value": "CLAIMS_INSURANCE"
+            },
+            "INVESTMENT RETURNS_LOANS": {
+              "value": "INVESTMENT RETURNS_LOANS"
+            },
+            "OPERATIONAL EXPENSES_CUSTOMER REVERSAL": {
+              "value": "OPERATIONAL EXPENSES_CUSTOMER REVERSAL"
+            },
+            "PAYROLL_EXPAT_SALARY": {
+              "value": "PAYROLL_EXPAT_SALARY"
+            },
+            "STATUTORY PAYMENTS_TAXES_OTHERS": {
+              "value": "STATUTORY PAYMENTS_TAXES_OTHERS"
+            }
+          }
+        }
+      },
+      "expert_instruction": "",
+      "show_instruction": false,
+      "show_skip_button": true,
+      "enable_empty_annotation": true,
+      "reveal_preannotations_interactively": false,
+      "show_annotation_history": false,
+      "show_collab_predictions": true,
+      "evaluate_predictions_automatically": false,
+      "token": "7a6689be546e2c3a",
+      "result_count": 0,
+      "color": "#FFFFFF",
+      "maximum_annotations": 1,
+      "min_annotations_to_start_training": 0,
+      "control_weights": {
+        "sentiment": {
+          "overall": 1.0,
+          "type": "Choices",
+          "labels": {
+            "MISCELLANEOUS": 1.0,
+            "PAYROLL_EXPAT_TRAVEL & OTHER ALLOWANCES": 1.0,
+            "BANK CHARGES_OTHERS": 1.0,
+            "INVESTMENT RETURNS": 1.0,
+            "UNIT BUDGET": 1.0,
+            "OPERATIONAL EXPENSES": 1.0,
+            "SALES_EXPORT": 1.0,
+            "WITHDRAWAL & TRANSFERS_FX": 1.0,
+            "STATUTORY PAYMENTS_TAXES_CORPORATE TAX": 1.0,
+            "FX BIDS": 1.0,
+            "DEPOSITS & TRANSFER_INTERNAL TRANSFER": 1.0,
+            "SALES_LOCAL": 1.0,
+            "WITHDRAWAL & TRANSFERS_INTERNAL TRANSFER": 1.0,
+            "PAYROLL_NATIONAL_OVERTIME": 1.0,
+            "PAYROLL_NATIONAL_OTHERS": 1.0,
+            "REFUNDS_VENDOR REFUNDS": 1.0,
+            "FINANCING_DEBT FINANCING_TERM LOAN": 1.0,
+            "DEBT PAYMENTS_TERM LOAN": 1.0,
+            "BANK INTEREST": 1.0,
+            "STATUTORY PAYMENTS_TAXES_VAT": 1.0,
+            "REFUNDS_LOGISTICS REFUNDS": 1.0,
+            "OPERATIONAL EXPENSES_RAW MATERIALS": 1.0,
+            "OPERATIONAL EXPENSES_CONSUMABLES & SPARES": 1.0,
+            "OPERATIONAL EXPENSES_FUEL&LUBRICANT": 1.0,
+            "DEBT PAYMENTS_OVERDRAFT FACILITY": 1.0,
+            "OPERATIONAL EXPENSES_LOGISTICS": 1.0,
+            "OPERATIONAL EXPENSES_LOGISTICS_OTHERS": 1.0,
+            "INVESTMENTS_OTHERS": 1.0,
+            "OPERATIONAL EXPENSES_INSURANCE PREMIUM": 1.0,
+            "BANK CHARGES_LC FACILITY": 1.0,
+            "PAYROLL_NATIONAL_SALARY": 1.0,
+            "STATUTORY PAYMENTS_EMPLOYEE BENEFITS_PENSION FUND": 1.0,
+            "REFUNDS_BANK REFUNDS": 1.0,
+            "STATUTORY PAYMENTS_TAXES_IMPORT DUTY": 1.0,
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES_HOTEL&RESTAURENTS": 1.0,
+            "OPERATIONAL EXPENSES_TRAVEL EXPENSES": 1.0,
+            "OPERATIONAL EXPENSES_UTILITY_ADMIN EXPENSES": 1.0,
+            "PAYROLL_NATIONAL_MEDICAL EXPENSES": 1.0,
+            "WITHDRAWAL & TRANSFERS": 1.0,
+            "PAYROLL_EXPAT_VISA&OTHERS": 1.0,
+            "PAYROLL_NATIONAL_LEAVE ALLOWANCES": 1.0,
+            "STATUTORY PAYMENTS_TAXES_PAYEE TAX": 1.0,
+            "NDF REFUND": 1.0,
+            "PAYROLL_NATIONAL_BONUS&INCENTIVES": 1.0,
+            "OPERATIONAL EXPENSES_UTILITY_MAINTENANCE": 1.0,
+            "INVESTMENTS_CAPITAL ASSET_BUILDING": 1.0,
+            "OPERATIONAL EXPENSES_LOGISTICS INSURANCE & OTHERS": 1.0,
+            "STATUTORY PAYMENTS_TAXES_EXPORT DUTY": 1.0,
+            "CLAIMS_INSURANCE": 1.0,
+            "INVESTMENT RETURNS_LOANS": 1.0,
+            "OPERATIONAL EXPENSES_CUSTOMER REVERSAL": 1.0,
+            "PAYROLL_EXPAT_SALARY": 1.0,
+            "STATUTORY PAYMENTS_TAXES_OTHERS": 1.0
+          }
+        }
+      },
+      "model_version": "",
+      "data_types": {
+        "processed_voucher_details": "Text"
+      },
+      "is_draft": false,
+      "is_published": false,
+      "created_at": "2023-02-23T13:27:25.864985Z",
+      "updated_at": "2023-02-23T13:32:48.339047Z",
+      "sampling": "Sequential sampling",
+      "skip_queue": "REQUEUE_FOR_OTHERS",
+      "show_ground_truth_first": false,
+      "show_overlap_first": false,
+      "overlap_cohort_percentage": 100,
+      "task_data_login": null,
+      "task_data_password": null,
+      "pinned_at": null,
+      "organization": 1,
+      "created_by": 1
+    },
+    "task": {
+      "id": 58762,
+      "data": {
+        "Unnamed: 0": 20575,
+        "category_ours_processed": "MISCELLANEOUS",
+        "processed_voucher_details": "paid sarem global express trf sarem global express"
+      },
+      "meta": {},
+      "created_at": "2023-02-23T13:29:20.442358Z",
+      "updated_at": "2023-02-23T13:44:46.463794Z",
+      "is_labeled": true,
+      "overlap": 1,
+      "inner_id": 7,
+      "total_annotations": 1,
+      "cancelled_annotations": 0,
+      "total_predictions": 0,
+      "comment_count": 0,
+      "unresolved_comment_count": 0,
+      "last_comment_updated_at": null,
+      "project": 28,
+      "updated_by": 1,
+      "file_upload": 34,
+      "comment_authors": []
+    }
+  }
+}
